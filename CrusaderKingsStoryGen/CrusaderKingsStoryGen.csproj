@@ -69,32 +69,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CharacterManager.cs" />
-    <Compile Include="CulturalDna.cs" />
-    <Compile Include="CulturalDnaManger.cs" />
-    <Compile Include="CultureDnaStringManip.cs" />
-    <Compile Include="CultureManager.cs" />
+    <Compile Include="history\characters\CharacterManager.cs" />
+    <Compile Include="common\cultures\CulturalDna.cs" />
+    <Compile Include="common\cultures\CulturalDnaManger.cs" />
+    <Compile Include="common\cultures\CultureDnaStringManip.cs" />
+    <Compile Include="common\cultures\CultureManager.cs" />
     <Compile Include="DateFunctions.cs" />
-    <Compile Include="DecisionManager.cs" />
-    <Compile Include="DynastyManager.cs" />
-    <Compile Include="EventManager.cs" />
-    <Compile Include="EventParser.cs" />
-    <Compile Include="FlagManager.cs" />
+    <Compile Include="decisions\DecisionManager.cs" />
+    <Compile Include="common\dynasties\DynastyManager.cs" />
+    <Compile Include="events\EventManager.cs" />
+    <Compile Include="events\EventParser.cs" />
+    <Compile Include="gfx\flags\FlagManager.cs" />
     <Compile Include="Globals.cs" />
-    <Compile Include="Government.cs" />
-    <Compile Include="GovernmentManager.cs" />
-    <Compile Include="LanguageManager.cs" />
-    <Compile Include="LockBitmap.cs" />
-    <Compile Include="MapManager.cs" />
+    <Compile Include="common\governments\Government.cs" />
+    <Compile Include="common\governments\GovernmentManager.cs" />
+    <Compile Include="localisation\LanguageManager.cs" />
+    <Compile Include="map\LockBitmap.cs" />
+    <Compile Include="map\MapManager.cs" />
     <Compile Include="ModularFunctionalityManager.cs" />
     <Compile Include="Parser.cs" />
-    <Compile Include="ProvinceManager.cs" />
-    <Compile Include="ProvinceParser.cs" />
+    <Compile Include="history\provinces\ProvinceManager.cs" />
+    <Compile Include="history\provinces\ProvinceParser.cs" />
     <Compile Include="Rand.cs" />
-    <Compile Include="RegionManager.cs" />
-    <Compile Include="ReligionGroupParser.cs" />
-    <Compile Include="ReligionManager.cs" />
-    <Compile Include="ReligionParser.cs" />
+    <Compile Include="map\RegionManager.cs" />
+    <Compile Include="common\religions\ReligionGroupParser.cs" />
+    <Compile Include="common\religions\ReligionManager.cs" />
+    <Compile Include="common\religions\ReligionParser.cs" />
     <Compile Include="RenderPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -103,10 +103,10 @@
     </Compile>
     <Compile Include="Simulation\CharacterParser.cs" />
     <Compile Include="Simulation\SimulationManager.cs" />
-    <Compile Include="SpriteManager.cs" />
+    <Compile Include="interface\SpriteManager.cs" />
     <Compile Include="StarNames.cs" />
-    <Compile Include="TitleManager.cs" />
-    <Compile Include="TitleParser.cs" />
+    <Compile Include="common\landed_titles\TitleManager.cs" />
+    <Compile Include="common\landed_titles\TitleParser.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,7 +116,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScriptLoader.cs" />
-    <Compile Include="TraitManager.cs" />
+    <Compile Include="common\traits\TraitManager.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +151,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
