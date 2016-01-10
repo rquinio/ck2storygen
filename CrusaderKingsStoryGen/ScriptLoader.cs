@@ -527,6 +527,7 @@ namespace CrusaderKingsStoryGen
                 Directory.CreateDirectory(Globals.ModDir + "common\\");
                 Directory.CreateDirectory(Globals.ModDir + "common\\cultures\\");
                 Directory.CreateDirectory(Globals.ModDir + "common\\dynasties\\");
+                Directory.CreateDirectory(Globals.ModDir + "common\\governments\\");
                 Directory.CreateDirectory(Globals.ModDir + "common\\landed_titles\\");
                 Directory.CreateDirectory(Globals.ModDir + "common\\religions\\");
                 Directory.CreateDirectory(Globals.ModDir + "common\\religious_titles\\");
